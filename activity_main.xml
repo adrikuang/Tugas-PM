@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    //Garis atas
+    <ImageView
+        android:id="@+id/bg_gambar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_dynamic_neutral90" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/teal_200"
+        android:visibility="visible" />
+
+    \\foto profile
+
+    <ImageView
+        android:id="@+id/foto_profile"
+        android:layout_width="81dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/icon" />
+
+
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:text="Adrian Huang"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    //logo email
+
+    <TextView
+        android:id="@+id/rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="-15dp"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:text="cv"
+        android:textSize="50dp" />
+
+    //logo telpon
+
+    //logo alamat
+
+    <ImageView
+        android:id="@+id/icon_email"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/nama"
+        android:src="@drawable/icon_email" />
+
+    <ImageView
+        android:id="@+id/icon_telepon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/icon_email"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/nama"
+        android:src="@drawable/icon_telepon" />
+
+
+
+    <ImageView
+        android:id="@+id/icon_alamat"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/icon_telepon"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/nama"
+        android:src="@drawable/icon_alamat" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/icon_email"
+        android:text="adrikuang@gmail.com\n\n08998413***\n\nDHI blok O no 7\n\n"
+        android:textColor="@color/black"
+        android:textSize="9dp"
+        android:textStyle="bold" />
+
+    //biodata diri
+
+    <TextView
+        android:id="@+id/tentang"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/foto_profile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@+id/nama"
+        android:text="Data Diri"
+        android:textColor="@color/purple_700"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/visible2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/foto_profile"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:layout_height="2dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/teal_200"
+        android:visibility="visible"/>
+
+    \\Biodata Singkat
+
+    <TextView
+        android:id="@+id/tentang_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visible2"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:text="Saya seorang mahasiswa Semester 6 di Universitas Esa Unggul. Sekarang bekerja di bagian Purchasing"
+        android:textColor="@color/material_dynamic_primary10"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    \\pengalaman kerja
+
+    <TextView
+        android:id="@+id/pengalaman"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/tentang"
+        android:layout_marginTop="79dp"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/nama"
+        android:text="  Riwayat \n Pekerjaan"
+        android:textColor="@color/purple_700"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/visible3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tentang_text"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:background="@color/teal_200"
+        android:visibility="visible" />
+
+    \\pengalaman 1
+    <TextView
+        android:id="@+id/pengalaman_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visible3"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/foto_profile"
+        android:text="PT BestProfit Futures"
+        android:textColor="@color/red"
+        android:textSize="12dp"
+        android:textStyle="bold"/>
+
+    \\pengalaman 2
+
+    <TextView
+        android:id="@+id/pengalaman_text_thn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visible3"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/foto_profile"
+        android:text="                                                          2018-2019\nSebagai Broker"
+        android:textColor="@color/royalblue"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pengalaman_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pengalaman_text_thn"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/foto_profile"
+        android:text="CV.Jemindo"
+        android:textColor="@color/red"
+        android:textSize="12dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/pengalaman_text_thn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pengalaman_text_thn"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/foto_profile"
+        android:text="                                                          2019-2021\nSebagai Admin"
+        android:textColor="@color/royalblue"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    \\pengalaman 3
+    <TextView
+        android:id="@+id/pengalaman_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pengalaman_text_thn2"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/foto_profile"
+        android:text="PT Marina Global Internusa dan \nMutiara Fibrindo"
+        android:textColor="@color/red"
+        android:textSize="12dp"
+        android:textStyle="bold"/>
+
+    //pendidikan
+
+    <TextView
+        android:id="@+id/pengalaman_text_thn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pengalaman_text_thn2"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@id/foto_profile"
+        android:text="                                                          2021-NOW\n\nSebagai Purchasing"
+        android:textColor="@color/royalblue"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pendidikan"
+        android:layout_width="113dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/pengalaman"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="-7dp"
+        android:layout_marginRight="7dp"
+        android:layout_toStartOf="@+id/visible4"
+        android:layout_toLeftOf="@+id/nama"
+        android:text=" Pendidikan"
+        android:textColor="@color/purple_700"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/visible4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/pengalaman_text_thn3"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:background="@color/teal_200"
+        android:visibility="visible" />
+
+
+
+    <TextView
+        android:id="@+id/pendidikan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visible4"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/foto_profile"
+        android:text="SMA Bunda Hati Kudus"
+        android:textColor="@color/red"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pendidikan_text_thn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visible4"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/foto_profile"
+        android:text="                                                          2015-2018"
+        android:textColor="@color/royalblue"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pendidikan_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pendidikan_text_thn"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="38dp"
+        android:layout_toRightOf="@id/foto_profile"
+        android:text="Universitas Esa Unggul"
+        android:textColor="@color/red"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pendidikan_text_thn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pendidikan_text_thn"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="39dp"
+        android:layout_toRightOf="@id/foto_profile"
+        android:text="                                                          2019-NOW"
+        android:textColor="@color/royalblue"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
